@@ -21,6 +21,8 @@
 
 2. Jeong, C. (2024c). *A study on the implementation method of an Agent-Based Advanced RAG system using Graph*. arXiv.org. https://doi.org/10.15813/kmr.2024.25.3.005
 
+3. Easin, A. M., Sourav, S., & Tamás, O. (2024). *An intelligent LLM-powered personalized assistant for digital banking using LangGraph and chain of thoughts. 2024 IEEE 22nd Jubilee International Symposium on Intelligent Systems and Informatics (SISY)*. https://doi.org/10.1109/SISY62279.2024.10737601
+
 
 ## Articles
 1. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
