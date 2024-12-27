@@ -15,15 +15,15 @@
 
 6. Bouchard, L.-F., & Peters, L. (2024). Building LLMs for Production: Enhancing LLM Abilities and Reliability with Prompting, Fine-Tuning, and RAG. [https://www.amazon.com/Building-LLMs-Production-Reliability-Fine-Tuning/dp/B0D4FFPFW8](https://www.amazon.com/Building-LLMs-Production-Reliability-Fine-Tuning/dp/B0D4FFPFW8)
 
-## Academic Papers
-1. 
 
-2. 
+## Academic Papers
+1. Topsakal, O., & Akinci, T. C. (2023b). *Creating large language model applications Utilizing LangChain: A primer on developing LLM apps fast*. International Conference on Applied Engineering and Natural Sciences, 1(1), 1050–1056. https://doi.org/10.59287/icaens.1127
+
+2. Jeong, C. (2024c). *A study on the implementation method of an Agent-Based Advanced RAG system using Graph*. arXiv.org. https://doi.org/10.15813/kmr.2024.25.3.005
 
 
 ## Articles
 1. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
-
 
 2. 
 
@@ -46,10 +46,10 @@
 8. Streamlit. (2023). Streamlit Documentation: Create Interactive Web Apps with Python. [https://streamlit.io/generative-ai/](https://streamlit.io/generative-ai/)
 
 
-
 ## AI Agent Interaction with PostgreSQL
 
 This document provides references and resources on how **AI agents** can interact with **PostgreSQL databases** for tasks like dynamic query generation, real-time data retrieval, and natural language processing.
+
 
 ### Relevant References
 
@@ -81,26 +81,12 @@ This document provides references and resources on how **AI agents** can interac
    - GPT-3 and other large language models can be used to generate SQL queries based on user input. These agents can generate, execute, and return data from PostgreSQL databases, enabling natural language interfaces for database access.
    - **Reference**: [Using GPT-3 for SQL Query Generation](https://towardsdatascience.com/sql-query-generation-with-openai-gpt-3-178a5481700f)
 
+
 ### Conclusion
 
 While there is no direct one-size-fits-all solution, the above references show a wide range of approaches where AI agents interact with **PostgreSQL databases** for data retrieval, analysis, and query generation. Using frameworks like **LangChain**, **GPT-3**, and leveraging **Python-based libraries**, you can build powerful AI-driven systems to query PostgreSQL and provide insightful, real-time responses.
 
 The references can serve as a starting point for interacting with QuestDB using an AI agent, especially since QuestDB is similar to PostgreSQL in many ways (it's a relational database and uses SQL queries). However, you will need to adapt certain aspects of these references to fit QuestDB's architecture and API.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## GitHub Repositories for AI Agent Lab
