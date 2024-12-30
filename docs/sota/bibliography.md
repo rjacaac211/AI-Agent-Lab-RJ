@@ -25,9 +25,15 @@
 
 
 ## Articles
-1. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+1.
 
-2. 
+
+## Technical Guides
+1. Langchain. (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+
+2. LangGraph. (2024). *Multi-agent concepts in LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/concepts/multi_agent/](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
+
+3. LangGraph. (2024). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
 
 
 ## Websites
