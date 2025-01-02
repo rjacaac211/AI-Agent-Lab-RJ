@@ -1,5 +1,6 @@
 To enhance the AI Agent Lab, it is essential to integrate cutting-edge research and methodologies from the broader AI landscape. This research focuses on multi-agent systems, advanced architectures for agent interaction, modular workflows for specialized tasks, and scalable solutions for real-world applications.
 
+
 ### Multi-Agent Systems (MAS)
 Multi-agent systems involve the use of multiple independent agents working together to achieve specific goals or tasks, addressing issues that arise as single-agent systems grow more complex. These problems include excessive tools leading to poor decision-making, overly complex contexts, and the need for specialized functionalities (e.g., planners, researchers, or experts). MAS divides applications into smaller, manageable units for better scalability, specialization, and control.
 
@@ -14,6 +15,21 @@ Multi-agent systems involve the use of multiple independent agents working toget
     - **Supervisor (tool-calling)**: A specialized variant of the supervisor architecture where individual agents act as tools. The supervisor agent, powered by a tool-calling LLM, decides which tool (agent) to invoke and passes the required arguments to them. This setup simplifies agent interactions and decision-making.
     - **Hierarchical**: A layered structure where supervisors manage subsets of agents (teams), and a top-level supervisor coordinates these teams. This architecture generalizes the supervisor model, enabling more complex workflows and finer-grained control over the system.
     - **Custom Multi-Agent Workflow**: Agents communicate only with a subset of other agents, defining specific interaction patterns. Some parts of the workflow are deterministic (predefined), while others allow agents to dynamically decide which agents to call, providing a flexible but structured approach.
+
+
+### Testing LLM Applications Across Development Cycles
+
+Testing language model (LLM) applications throughout their development cycle is crucial for ensuring reliability and effectiveness:
+
+1. **Design Phase**:
+   - Integrate testing into the design phase to promote self-correction within applications, utilizing techniques like self-corrective code generation that leverage LLM capabilities.
+
+2. **Pre-Production Phase**:
+   - Build datasets for evaluation from past application logs or synthetic data and define evaluation criteria using heuristic, human, and LLM-as-Judge evaluators.
+   - Conduct regression testing frequently due to model drift sensitivity; this ensures that updates do not introduce new errors.
+
+3. **Post-Production Phase**:
+   - Set up tracing using tools like LangSmith to gain visibility into production traffic, allowing for effective monitoring of application performance and user feedback collection.
 
 
 ### Recent Research Contributions
