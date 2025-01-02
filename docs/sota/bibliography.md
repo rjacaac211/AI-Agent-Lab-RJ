@@ -17,11 +17,15 @@
 
 
 ## Academic Papers
-1. Topsakal, O., & Akinci, T. C. (2023b). *Creating large language model applications Utilizing LangChain: A primer on developing LLM apps fast*. International Conference on Applied Engineering and Natural Sciences, 1(1), 1050–1056. https://doi.org/10.59287/icaens.1127
+1. Han, S., Zhang, Q., Yao, Y., Jin, W., Xu, Z., & He, C. (2024b). LLM Multi-Agent Systems: Challenges and open Problems. arXiv (Cornell University). [https://doi.org/10.48550/arxiv.2402.03578](https://doi.org/10.48550/arxiv.2402.03578)
 
-2. Jeong, C. (2024c). *A study on the implementation method of an Agent-Based Advanced RAG system using Graph*. arXiv.org. https://doi.org/10.15813/kmr.2024.25.3.005
+2. Topsakal, O., & Akinci, T. C. (2023b). *Creating large language model applications Utilizing LangChain: A primer on developing LLM apps fast*. International Conference on Applied Engineering and Natural Sciences, 1(1), 1050–1056. [https://doi.org/10.59287/icaens.1127](https://doi.org/10.59287/icaens.1127)
 
-3. Easin, A. M., Sourav, S., & Tamás, O. (2024). *An intelligent LLM-powered personalized assistant for digital banking using LangGraph and chain of thoughts. 2024 IEEE 22nd Jubilee International Symposium on Intelligent Systems and Informatics (SISY)*. https://doi.org/10.1109/SISY62279.2024.10737601
+3. Jeong, C. (2024c). *A study on the implementation method of an Agent-Based Advanced RAG system using Graph*. arXiv.org. [https://doi.org/10.15813/kmr.2024.25.3.005](https://doi.org/10.15813/kmr.2024.25.3.005)
+
+4. Easin, A. M., Sourav, S., & Tamás, O. (2024). *An intelligent LLM-powered personalized assistant for digital banking using LangGraph and chain of thoughts. 2024 IEEE 22nd Jubilee International Symposium on Intelligent Systems and Informatics (SISY)*. [https://doi.org/10.1109/SISY62279.2024.10737601](https://doi.org/10.1109/SISY62279.2024.10737601)
+
+5. Wang, J., & Duan, Z. (2024a). Intelligent Spark Agents: a modular LangGraph framework for scalable, visualized, and enhanced big data machine learning workflows. arXiv (Cornell University). [https://doi.org/10.48550/arxiv.2412.01490](https://doi.org/10.48550/arxiv.2412.01490)
 
 
 ## Articles
