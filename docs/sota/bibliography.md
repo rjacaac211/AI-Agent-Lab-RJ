@@ -35,6 +35,8 @@
 
 3. LangGraph. (2024). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
 
+4. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+
 
 ## Websites
 1. LangChain. (2023). *Documentation for LangChain: Building Applications with Large Language Models (LLMs)*. [https://langchain.com/docs](https://langchain.com/docs)
