@@ -19,17 +19,21 @@ Multi-agent systems involve the use of multiple independent agents working toget
 
 ### Testing LLM Applications Across Development Cycles
 
-Testing language model (LLM) applications throughout their development cycle is crucial for ensuring reliability and effectiveness:
+Testing language model (LLM) applications throughout their development cycle is crucial for ensuring reliability and effectiveness. It involves implementing targeted testing techniques at different stages—design, pre-production, and post-production—to identify, address, and prevent potential issues while continuously improving performance.
 
 1. **Design Phase**:
-   - Integrate testing into the design phase to promote self-correction within applications, utilizing techniques like self-corrective code generation that leverage LLM capabilities.
+   - Incorporate error handling directly into the application to prevent unwanted outputs, leveraging frameworks like LangGraph for orchestrating control flows.
+   - Implement self-corrective mechanisms such as assertions that detect and address common issues (e.g., hallucinations in Retrieval-Augmented Generation or invalid imports in code generation) by routing errors back to the LLM for correction.
 
 2. **Pre-Production Phase**:
-   - Build datasets for evaluation from past application logs or synthetic data and define evaluation criteria using heuristic, human, and LLM-as-Judge evaluators.
-   - Conduct regression testing frequently due to model drift sensitivity; this ensures that updates do not introduce new errors.
+   - **Dataset Creation**: Develop datasets from sources like manually curated examples, application logs, and synthetic data to benchmark the application.
+   - **Evaluation Criteria**: Use heuristic evaluations, human feedback, and LLM-as-Judge evaluators to assess application performance on predetermined test scenarios.
+   - **Regression Testing**: Measure performance across different versions of the application to identify regressions or improvements, using tools like LangSmith to compare results and isolate issues.
 
 3. **Post-Production Phase**:
-   - Set up tracing using tools like LangSmith to gain visibility into production traffic, allowing for effective monitoring of application performance and user feedback collection.
+   - **Monitoring**: Set up tracing to capture application performance in real-world usage, tracking metrics such as response accuracy, latency, and failure rates.
+   - **Feedback Collection**: Gather explicit or implicit feedback from users and integrate LLM-as-Judge evaluators for online evaluation to identify errors like hallucinations or irrelevant responses.
+   - **Bootstrapping**: Fold errors identified during production back into the dataset for pre-production testing, ensuring iterative improvements in future versions.
 
 
 ### Recent Research Contributions
