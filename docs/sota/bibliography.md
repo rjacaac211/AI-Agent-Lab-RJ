@@ -37,29 +37,33 @@
 ## Technical Guides
 1. Langchain. (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
 
-2. LangGraph. (2024). *Multi-agent concepts in LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/concepts/multi_agent/](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
+2. LangGraph. (2025). *Multi-agent concepts in LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/concepts/multi_agent/](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
 
-3. LangGraph. (2024). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
+3. LangGraph. (2025). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
 
-4. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+4. Langchain (2025). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+
+5. OpenAI (2025). *OpenAI Python*. [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
 
 
 ## Websites
-1. LangChain. (2023). *Documentation for LangChain: Building Applications with Large Language Models (LLMs)*. [https://langchain.com/docs](https://langchain.com/docs)
+1. LangChain. (2025). *LangChain Documentation*. [https://python.langchain.com/docs/](https://python.langchain.com/docs/)
 
-2. LangChain. (2023). *LangChain Community: Join the LangChain Community*. [https://langchain.com/join-community](https://langchain.com/join-community)
+2. LangChain. (2025). *LangChain Community: Join the LangChain Community*. [https://langchain.com/join-community](https://langchain.com/join-community)
 
-3. Docker. (2023). *Using Docker Compose for Multi-Container Applications*. [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
+3. OpenAI API (2025). *Open AI API Documentation*.[https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview)
 
-4. QuestDB. (2023). *QuestDB Documentation*. [https://questdb.io/docs](https://questdb.io/docs)
+4. Docker. (2025). *Using Docker Compose for Multi-Container Applications*. [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 
-5. QuestDB. (2023). *QuestDB Tutorials*. [https://questdb.io/blog/tags/tutorial](https://questdb.io/blog/tags/tutorial)
+5. QuestDB. (2025). *QuestDB Documentation*. [https://questdb.io/docs](https://questdb.io/docs)
 
-6. Code-Server. (2023). *Code-Server: Run VS Code in the Browser*. [https://coder.com/docs/code-server/latest](https://coder.com/docs/code-server/latest)
+6. QuestDB. (2025). *QuestDB Tutorials*. [https://questdb.io/blog/tags/tutorial](https://questdb.io/blog/tags/tutorial)
 
-7. Grafana. (2023). *Grafana Documentation*. [https://grafana.com/docs/grafana/latest/](https://grafana.com/docs/grafana/latest/)
+7. Code-Server. (2025). *Code-Server: Run VS Code in the Browser*. [https://coder.com/docs/code-server/latest](https://coder.com/docs/code-server/latest)
 
-8. Streamlit. (2023). Streamlit Documentation: Create Interactive Web Apps with Python. [https://streamlit.io/generative-ai/](https://streamlit.io/generative-ai/)
+8. Grafana. (2025). *Grafana Documentation*. [https://grafana.com/docs/grafana/latest/](https://grafana.com/docs/grafana/latest/)
+
+9. Streamlit. (2025). Streamlit Documentation: Create Interactive Web Apps with Python. [https://streamlit.io/generative-ai/](https://streamlit.io/generative-ai/)
 
 
 ## GitHub Repositories for AI Agent Lab
