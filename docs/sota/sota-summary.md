@@ -6,6 +6,8 @@
 
 This document provides a comprehensive overview of the latest advancements in AI agent frameworks, methodologies, and tools. It draws insights from state-of-the-art research, practical implementations, and emerging trends to support the development of the AI Agent Lab. The lab aims to create intelligent, scalable agents capable of interacting with complex systems, making strategic decisions, and leveraging cutting-edge technologies like LangChain, LangGraph, and QuestDB.
 
+This document provides a comprehensive overview of the latest advancements in AI agent frameworks, methodologies, and tools. It draws insights from state-of-the-art research, practical implementations, and emerging trends to support the development of the AI Agent Lab. The lab aims to create intelligent, scalable agents capable of interacting with complex systems, making strategic decisions, and leveraging cutting-edge technologies like LangChain, LangGraph, QuestDB, Grafana, OpenAI API, and VSCode.
+
 ---
 
 **Key Methodologies and Concepts**
@@ -65,7 +67,12 @@ This document provides a comprehensive overview of the latest advancements in AI
 5. **OpenAI API**
    - Facilitates natural language understanding and query generation.
 
-6. **Docker**
+6. **VSCode Integration**
+   - Provides a robust, web-based coding environment through Code-Server.
+   - Enables real-time collaboration, debugging, and integration with tools like QuestDB and Grafana.
+   - Supports seamless workflows for development and experimentation within the AI Agent Lab.
+
+7. **Docker**
    - Ensures seamless deployment and scalability across different environments.
 
 ---
@@ -126,9 +133,13 @@ This document provides a comprehensive overview of the latest advancements in AI
 4. **User Interface and Visualization**
    - Use Grafana to enhance user engagement through interactive dashboards.
 
+5. **VSCode Integration****
+   - Facilitate collaborative development and debugging within the lab.
+   - Simplify integration of various tools and technologies for streamlined workflows.
+
 ---
 
 **Conclusion**
 
-The AI Agent Lab is uniquely positioned to leverage cutting-edge tools like LangChain, LangGraph, and QuestDB. This document outlines a strategic roadmap, beginning with foundational text-to-SQL capabilities and scaling to advanced graph-based reasoning. By integrating SQL-based indicators and visualization tools, the lab can deliver robust, real-world AI applications aligned with state-of-the-art methodologies and technologies.
+The AI Agent Lab is uniquely positioned to leverage cutting-edge tools like LangChain, LangGraph, QuestDB, Grafana, OpenAI API, and VSCode. This document outlines a strategic roadmap, beginning with foundational text-to-SQL capabilities and scaling to advanced graph-based reasoning. By integrating SQL-based indicators, visualization tools, and collaborative coding environments, the lab ensures robust, real-world AI applications aligned with state-of-the-art methodologies and technologies.
 
