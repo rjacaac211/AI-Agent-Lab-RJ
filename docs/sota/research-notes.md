@@ -1,3 +1,5 @@
+# Research Notes
+
 To enhance the AI Agent Lab, it is essential to integrate cutting-edge research and methodologies from the broader AI landscape. This research focuses on AI agents and their foundational role in enabling complex systems, as well as multi-agent systems, advanced architectures for agent interaction, modular workflows for specialized tasks, and scalable solutions for real-world applications.
 
 ## AI Agents
