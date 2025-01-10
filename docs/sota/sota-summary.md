@@ -94,6 +94,12 @@ This document provides a comprehensive overview of the latest advancements in AI
 5. **Iterative Testing Cycles**
    - Continuous improvement through rigorous testing and monitoring.
 
+6. **Integration with Advanced Tools**
+   - Incorporating tools like Grafana for real-time data visualization and VSCode for collaborative development.
+
+7. **Secure and Distributed Architecture**
+   - Employing Nginx and Certbot for secure, scalable, and modular service deployment.
+
 ---
 
 **Recent Research Contributions**
@@ -110,9 +116,6 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 4. **Testing Frameworks**
    - Tools like LangSmith and LangGraph for validation at every stage of development.
-
-5. **SQL-Based Indicators in Financial Systems**
-   - Advanced analytics using SMA, EMA, RSI, and other metrics for decision-making.
 
 ---
 
@@ -133,13 +136,15 @@ This document provides a comprehensive overview of the latest advancements in AI
 4. **User Interface and Visualization**
    - Use Grafana to enhance user engagement through interactive dashboards.
 
-5. **VSCode Integration****
+5. **VSCode Integration**
    - Facilitate collaborative development and debugging within the lab.
    - Simplify integration of various tools and technologies for streamlined workflows.
+
+6. **Secure Deployment with Docker and Nginx**
+   - Leverage Docker for modular service management and Nginx for secure and efficient routing.
 
 ---
 
 **Conclusion**
 
-The AI Agent Lab is uniquely positioned to leverage cutting-edge tools like LangChain, LangGraph, QuestDB, Grafana, OpenAI API, and VSCode. This document outlines a strategic roadmap, beginning with foundational text-to-SQL capabilities and scaling to advanced graph-based reasoning. By integrating SQL-based indicators, visualization tools, and collaborative coding environments, the lab ensures robust, real-world AI applications aligned with state-of-the-art methodologies and technologies.
-
+The AI Agent Lab is uniquely positioned to leverage cutting-edge tools like LangChain, LangGraph, QuestDB, Grafana, OpenAI API, and VSCode. By integrating modular and secure architecture, SQL-based indicators, advanced reasoning frameworks, and robust visualization tools, the lab ensures a scalable and adaptable platform for real-world AI applications aligned with state-of-the-art methodologies and technologies.
