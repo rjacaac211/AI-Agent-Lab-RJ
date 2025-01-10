@@ -1,6 +1,4 @@
-# **State-of-the-Art (SOTA) Summary for AI Agent Lab**
-
----
+# State-of-the-Art (SOTA) Summary for AI Agent Lab
 
 ## **Introduction**
 
@@ -8,7 +6,7 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Key Methodologies and Concepts**
+## Key Methodologies and Concepts
 
 1. **Natural Language to SQL (Text-to-SQL)**
    Text-to-SQL enables intuitive interaction with databases by converting user queries into structured SQL commands.
@@ -45,7 +43,7 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Key Tools and Technologies**
+## Key Tools and Technologies
 
 1. **LangChain**
    - Core framework for text-to-SQL conversions.
@@ -75,7 +73,7 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Emerging Trends in AI Agent Frameworks**
+## Emerging Trends in AI Agent Frameworks
 
 1. **Modularity and Scalability**
    - Development of systems that scale dynamically with modular components.
@@ -100,7 +98,7 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Recent Research Contributions**
+## Recent Research Contributions
 
 1. **Holistic AI Agents**
    - Integration of foundational models with embodied actions to achieve adaptive intelligence.
@@ -117,7 +115,7 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Relevance to AI Agent Lab Development**
+## Relevance to AI Agent Lab Development
 
 1. **Phase 1: Basic Prototype**
    - Implement LangChain for text-to-SQL capabilities.
@@ -143,6 +141,6 @@ This document provides a comprehensive overview of the latest advancements in AI
 
 ---
 
-## **Conclusion**
+## Conclusion
 
 The AI Agent Lab is uniquely positioned to leverage cutting-edge tools like LangChain, LangGraph, QuestDB, Grafana, OpenAI API, and VSCode. By integrating modular and secure architecture, SQL-based indicators, advanced reasoning frameworks, and robust visualization tools, the lab ensures a scalable and adaptable platform for real-world AI applications aligned with state-of-the-art methodologies and technologies.
