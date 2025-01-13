@@ -31,19 +31,13 @@
 
 
 ## Articles
-1.
+1. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
 
+2. Latterner, T. (2024). *Guide of AI Agent Types with Examples*. Medium. [https://medium.com/@thomas.latterner/guide-of-ai-agent-types-with-examples-79f94a741d44](https://medium.com/@thomas.latterner/guide-of-ai-agent-types-with-examples-79f94a741d44)
 
-## Technical Guides
-1. Langchain. (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
+3. CatOps, W. (2024). *Understanding AI Agents: How They Work, Types, and Practical Applications*. Medium. [https://medium.com/@williamwarley/understanding-ai-agents-how-they-work-types-and-practical-applications-bd261845f7c3](https://medium.com/@williamwarley/understanding-ai-agents-how-they-work-types-and-practical-applications-bd261845f7c3)
 
-2. LangGraph. (2025). *Multi-agent concepts in LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/concepts/multi_agent/](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
-
-3. LangGraph. (2025). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
-
-4. Langchain (2025). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
-
-5. OpenAI (2025). *OpenAI Python*. [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
+4. Devansh. (2024). *An Overview of the AI Agent Landscape*. Medium. [https://machine-learning-made-simple.medium.com/an-overview-of-the-ai-agent-landscape-9c92009a0a30](https://machine-learning-made-simple.medium.com/an-overview-of-the-ai-agent-landscape-9c92009a0a30)
 
 
 ## Websites
@@ -51,26 +45,38 @@
 
 2. LangChain. (2025). *LangChain Community: Join the LangChain Community*. [https://langchain.com/join-community](https://langchain.com/join-community)
 
-3. OpenAI API (2025). *Open AI API Documentation*.[https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview)
+3. LangGraph. (2025). *Multi-agent concepts in LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/concepts/multi_agent/](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
 
-4. Docker. (2025). *Using Docker Compose for Multi-Container Applications*. [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
+4. LangGraph. (2025). *Agent handoffs: How-tos for LangGraph*. LangChain AI. [https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/s](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
 
-5. QuestDB. (2025). *QuestDB Documentation*. [https://questdb.io/docs](https://questdb.io/docs)
+5. OpenAI (2025). *OpenAI Python*. [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
 
-6. QuestDB. (2025). *QuestDB Tutorials*. [https://questdb.io/blog/tags/tutorial](https://questdb.io/blog/tags/tutorial)
+6. OpenAI API (2025). *Open AI API Documentation*.[https://platform.openai.com/docs/overview](https://platform.openai.com/docs/overview)
 
-7. Code-Server. (2025). *Code-Server: Run VS Code in the Browser*. [https://coder.com/docs/code-server/latest](https://coder.com/docs/code-server/latest)
+7. Docker. (2025). *Using Docker Compose for Multi-Container Applications*. [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 
-8. Grafana. (2025). *Grafana Documentation*. [https://grafana.com/docs/grafana/latest/](https://grafana.com/docs/grafana/latest/)
+8. QuestDB. (2025). *QuestDB Documentation*. [https://questdb.io/docs](https://questdb.io/docs)
 
-9. Streamlit. (2025). Streamlit Documentation: Create Interactive Web Apps with Python. [https://streamlit.io/generative-ai/](https://streamlit.io/generative-ai/)
+9. QuestDB. (2025). *QuestDB Tutorials*. [https://questdb.io/blog/tags/tutorial](https://questdb.io/blog/tags/tutorial)
+
+10. Code-Server. (2025). *Code-Server: Run VS Code in the Browser*. [https://coder.com/docs/code-server/latest](https://coder.com/docs/code-server/latest)
+
+11. Grafana. (2025). *Grafana Documentation*. [https://grafana.com/docs/grafana/latest/](https://grafana.com/docs/grafana/latest/)
+
+12. Streamlit. (2025). Streamlit Documentation: Create Interactive Web Apps with Python. [https://streamlit.io/generative-ai/](https://streamlit.io/generative-ai/)
 
 
 ## GitHub Repositories for AI Agent Lab
 
-1. AI Agent Lab - LangChain Streamlit Agents. (2024). Repository for LangChain agents implemented as Streamlit apps. [Streamlit-agent](https://github.com/langchain-ai/streamlit-agent)
+1. AI Agent Lab - LangChain Streamlit Agents. (2024). Repository for LangChain agents implemented as Streamlit apps. [Streamlit-Agent](https://github.com/langchain-ai/streamlit-agent)
 
-2. AI Agent Lab - Chatbot Implementations (2024). Repository for Chatbot Implementations with Langchain + Streamlit. [Streamlit-agent](https://github.com/shashankdeshpande/langchain-chatbot)
+2. AI Agent Lab - Chatbot Implementations. (2024). Repository for Chatbot Implementations with Langchain + Streamlit. [Langchain-Chatbot](https://github.com/shashankdeshpande/langchain-chatbot)
+
+3. AI Agent Lab - LangGraph Expense tracker. (2024). Repository exploring LangGraph, processes invoices, categorizes expenses, and stores data in a database. [LangGraph-Expense-Tracker](https://github.com/jwa91/LangGraph-Expense-Tracker)
+
+4. AI Agent Lab - Postgres AI Database Agent. (2024). Repository for generating SQL queries from natural language using OpenAI API, integrated with PostgreSQL. [Postgres-AI-Database-Agent](https://github.com/roman-rimorin-vertex/postgres-ai-database-agent)
+
+5. AI Agent Lab - Postgres Chatbot with Streamlit. (2024). Repository for a chatbot interacting with PostgreSQL, answering queries via a Streamlit interface. [Postgres-Chatbot](https://github.com/BlueBash/postgres-chatbot)
 
 
 # Potential Sources for the Bibliography
