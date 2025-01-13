@@ -101,3 +101,4 @@ Testing language model (LLM) applications throughout their development cycle is 
 [7] Easin, A. M., Sourav, S., & Tamás, O. (2024). *An intelligent LLM-powered personalized assistant for digital banking using LangGraph and chain of thoughts. 2024 IEEE 22nd Jubilee International Symposium on Intelligent Systems and Informatics (SISY)*. [https://doi.org/10.1109/SISY62279.2024.10737601](https://doi.org/10.1109/SISY62279.2024.10737601)
 
 [8] Wang, J., & Duan, Z. (2024a). *Intelligent Spark Agents: a modular LangGraph framework for scalable, visualized, and enhanced big data machine learning workflows*. arXiv (Cornell University). [https://doi.org/10.48550/arxiv.2412.01490](https://doi.org/10.48550/arxiv.2412.01490)
+
