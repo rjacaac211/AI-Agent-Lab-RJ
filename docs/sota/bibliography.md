@@ -1,6 +1,7 @@
 # Bibliography
 
 ## Books
+
 1. Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*. 4th Edition. Pearson.
 [https://www.amazon.com/Artificial-Intelligence-A-Modern-Approach/dp/0134610997](https://www.amazon.com/Artificial-Intelligence-A-Modern-Approach/dp/0134610997)
 
@@ -17,6 +18,7 @@
 
 
 ## Academic Papers
+
 1. Huang, Q., Wake, N., Sarkar, B., Durante, Z., Gong, R., Taori, R., Noda, Y., Terzopoulos, D., Kuno, N., Famoti, A., Llorens, A., Langford, J., Vo, H., Fei-Fei, L., Ikeuchi, K., & Gao, J. (2024b). *Position Paper: Agent AI towards a Holistic Intelligence*. arXiv (Cornell University). [https://doi.org/10.48550/arxiv.2403.00833](https://doi.org/10.48550/arxiv.2403.00833)
 
 2. Han, S., Zhang, Q., Yao, Y., Jin, W., Xu, Z., & He, C. (2024b). *LLM Multi-Agent Systems: Challenges and open Problems*. arXiv (Cornell University). [https://doi.org/10.48550/arxiv.2402.03578](https://doi.org/10.48550/arxiv.2402.03578)
@@ -31,6 +33,7 @@
 
 
 ## Articles
+
 1. Langchain (2024). *Definitive Guide to Testing LLM Applications*. AI Industry Reports. Available in the reports folder of the AI Agent Lab.
 
 2. Latterner, T. (2024). *Guide of AI Agent Types with Examples*. Medium. [https://medium.com/@thomas.latterner/guide-of-ai-agent-types-with-examples-79f94a741d44](https://medium.com/@thomas.latterner/guide-of-ai-agent-types-with-examples-79f94a741d44)
@@ -41,6 +44,7 @@
 
 
 ## Websites
+
 1. LangChain. (2025). *LangChain Documentation*. [https://python.langchain.com/docs/](https://python.langchain.com/docs/)
 
 2. LangChain. (2025). *LangChain Community: Join the LangChain Community*. [https://langchain.com/join-community](https://langchain.com/join-community)
@@ -77,6 +81,27 @@
 4. AI Agent Lab - Postgres AI Database Agent. (2024). Repository for generating SQL queries from natural language using OpenAI API, integrated with PostgreSQL. [Postgres-AI-Database-Agent](https://github.com/roman-rimorin-vertex/postgres-ai-database-agent)
 
 5. AI Agent Lab - Postgres Chatbot with Streamlit. (2024). Repository for a chatbot interacting with PostgreSQL, answering queries via a Streamlit interface. [Postgres-Chatbot](https://github.com/BlueBash/postgres-chatbot)
+
+
+## Interface-First Design
+
+1. Bran van der Meer. (2022). *Interface-First Programming: 10X Your Code Quality*. YouTube. [https://www.youtube.com/watch?v=uy60WR5cszM](https://www.youtube.com/watch?v=uy60WR5cszM)
+
+2. Green Tea Coding. (2024). *Understanding Interfaces: How They Solve Real Problems | Interfaces Masterclass Series*. YouTube. [https://www.youtube.com/watch?v=_5FR8BexGUY](https://www.youtube.com/watch?v=_5FR8BexGUY)
+
+3. Green Tea Coding. (2024). *The Interface Advantage: Better Object-Oriented Designs | Interfaces Masterclass Series*. YouTube. [https://www.youtube.com/watch?v=DeW35PBUKho](https://www.youtube.com/watch?v=DeW35PBUKho)
+
+4. Green Tea Coding. (2024). *How Dependency Inversion Relies on Inversion of Control | Interface Masterclass Series*. YouTube. [https://www.youtube.com/watch?v=vAvKpVuB9NU](https://www.youtube.com/watch?v=vAvKpVuB9NU)
+
+5. k0nze. (2024). *Python Interfaces and Abstract Base Class (ABC): A Must-Know for Advanced Programmers*. YouTube. [https://www.youtube.com/watch?v=kaZceE16m5A](https://www.youtube.com/watch?v=kaZceE16m5A)
+
+6. Hallaj, P. (2023). *Python Protocols vs. ABCs: A Comprehensive Comparison of Interface Design*. Medium. [https://medium.com/@pouyahallaj/introduction-1616b3a4a637](https://medium.com/@pouyahallaj/introduction-1616b3a4a637)
+
+7. Murphy, W. (2024). *Implementing an interface in Python*. Real Python. [https://realpython.com/python-interface/](https://realpython.com/python-interface/)
+
+8. Kumar, B. (2024). *Interfaces in Python [With Real-World Example]*. Python Guides. [https://pythonguides.com/python-interface/](https://pythonguides.com/python-interface/)
+
+9. LabEx. (2025). *How to ensure robust interface design in Python*. LabEx. [https://labex.io/tutorials/python-how-to-ensure-robust-interface-design-in-python-397989](https://labex.io/tutorials/python-how-to-ensure-robust-interface-design-in-python-397989)
 
 
 # Potential Sources for the Bibliography
