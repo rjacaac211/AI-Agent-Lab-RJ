@@ -1,30 +1,30 @@
 # syntax=docker/dockerfile:1.4
-FROM --platform=$BUILDPLATFORM python:3.10-alpine AS builder
+FROM python:3.10-alpine
 
-# Switch to root user for permissions
+# Set environment variables to avoid Python bytecode caching
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
+# Add /aiagent to PYTHONPATH
+ENV PYTHONPATH=/
 
+# Set working directory
 WORKDIR /aiagent
 
+# Install system dependencies (e.g., PostgreSQL client for QuestDB)
+RUN apk add --no-cache gcc g++ musl-dev libpq-dev postgresql-client
+
+# Copy requirements file and install dependencies
 COPY requirements.txt /aiagent
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip3 install -r requirements.txt
+    pip3 install --no-cache-dir -r requirements.txt
 
+# Copy application code
 COPY . /aiagent
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]
+# Expose the port the Flask app will run on
+EXPOSE 5001
 
-
-FROM builder as dev-envs
-
-RUN <<EOF
-apk update
-apk add git
-EOF
-
-RUN <<EOF
-addgroup -S docker
-adduser -S --shell /bin/bash --ingroup docker vscode
-EOF
-# install Docker tools (cli, buildx, compose)
-#COPY --from=gloursdocker/docker / /
+# Set the default entrypoint and command
+ENTRYPOINT ["python3"]
+CMD ["run.py"]
