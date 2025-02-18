@@ -25,10 +25,12 @@ aiagent/
 │   │   ├── __init__.py
 │   │   ├── agent.py
 │   │   ├── tool.py
+│   │   ├── memory.py
 │   ├── interface/
 │   │   ├── __init__.py
 │   │   ├── agent_interface.py
 │   │   ├── tool_interface.py
+│   │   ├── memory_interface.py
 │   ├── routes/
 │   │   ├── __init__.py
 │   │   ├── chat_routes.py
@@ -90,9 +92,18 @@ Below is an overview of the files that implement the agent’s functionality and
      - Called by the agent when a SQL query needs to run.
      - Returns query results in a JSON-like string.
 
+### **4.4. `app/core/memory.py`**
+- **Class**: `WindowMemoryManager`
+- **Implements**: `MemoryInterface`
+- **Highlights**:
+  1. Provides memory management for conversation context.
+  2. Uses a window-based approach to retain only the most recent messages (e.g., 10 messages) for context.
+  3. Enables multi-turn conversational capability.
+
 ### **4.4. `app/interface/` (Interfaces)
 - **`agent_interface.py`**: Defines `AgentInterface` with the core method signature `invoke(user_message: str) -> str`.
 - **`tool_interface.py`**: Defines `ToolInterface` with the core method signature `execute_query(query: str) -> str`.
+- **`memory_interface.py`**: Defines `MemoryInterface` with the necessary methods to manage conversation memory.
 - **`__init__.py`**: Makes these interfaces easily importable from a single place.
 
 This directory is pivotal in the **Interface-First** approach. By referencing the interfaces rather than concrete classes, the rest of the code remains flexible and unit-testable.
