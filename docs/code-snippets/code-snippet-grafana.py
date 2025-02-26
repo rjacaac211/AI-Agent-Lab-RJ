@@ -8,7 +8,7 @@ env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../docker
 load_dotenv(dotenv_path=env_path)
 
 # Fetch Grafana configuration from environment variables
-GRAFANA_API_URL = os.getenv("GRAFANA_API_URL", "http://localhost:3000")
+GRAFANA_API_URL = os.getenv("GRAFANA_API_URL", "http://192.168.1.161:3000")
 GRAFANA_API_TOKEN = os.getenv("GRAFANA_API_TOKEN")
 
 if not GRAFANA_API_TOKEN:
