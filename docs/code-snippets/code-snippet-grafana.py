@@ -27,9 +27,7 @@ def validate_grafana_connection():
     }
     
     try:
-        # For local Docker networks with plain HTTP, certificate verification is not needed.
-        # In production with HTTPS, set verify=True or provide a CA bundle.
-        response = requests.get(url, headers=headers, verify=False)
+        response = requests.get(url, headers=headers)
         print("Status:", response.status_code)
         try:
             print("JSON:", response.json())
