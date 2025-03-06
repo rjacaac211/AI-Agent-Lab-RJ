@@ -17,11 +17,14 @@ class MainAgent(AgentInterface):
         window_size: int = 10
     ):
         """
-        :param tools: List of LangChain tools (e.g., [QueryQuestDBTool()])
+        :param tools: List of LangChain tools (e.g., [QueryQuestDBTool(), GrafanaDashboardTool()]).
         :param memory: A MemoryInterface implementation for conversation.
         :param model_name: Name of the LLM.
         :param window_size: If no memory object is passed, we create a default WindowMemoryManager with this size.
         """
+
+        # Initialize tools
+        self.tools = tools
 
         # Initialize or default to ephemeral window memory
         self.memory = memory or WindowMemoryManager(window_size)
@@ -51,16 +54,28 @@ class MainAgent(AgentInterface):
         - timestamp (ISO 8601 datetime): The trade timestamp.
         """
         system_prompt = f"""
-        You are an AI assistant with access to a QuestDB database. The database schema is as follows:
+        You are an AI assistant with access to both a QuestDB database and a Grafana dashboard API.
+
+        Database schema:
         {table_schema}
 
-        Respond to user queries by generating appropriate SQL queries. Do NOT provide explanations or extra text.
+        You have two tools at your disposal:
+        - QueryQuestDBTool: Execute SQL queries against QuestDB.
+        - GrafanaDashboardTool: Manage Grafana dashboards.
+
+        When handling Grafana dashboard tasks, output exactly one of the following commands (and nothing else):
+          - To create a new dashboard: "create:<title>"
+          - To delete a dashboard by UID: "delete:<uid>"
+          - To delete a dashboard by name: "deleteByName:<dashboard_name>"
+
+        Make final replies brief and concise while maintaining understandability, clarity and completeness.
+        Do NOT add extra explanations or texts.
         """
 
         # Create the ReAct agent
         self.agent = create_react_agent(
             self.llm,
-            tools,
+            self.tools,
             state_modifier=system_prompt
         )
 
@@ -75,9 +90,6 @@ class MainAgent(AgentInterface):
 
         # Load existing conversation from memory
         conversation_history = self.memory.load_conversation(session_id)
-
-        # Convert conversation history into langgraph's input format
-        # Typically: [("human", "message1"), ("assistant", "message2"), ...]
         past_messages = []
         for msg in conversation_history:
             role = "human" if msg["role"] == "user" else "assistant"
@@ -85,14 +97,10 @@ class MainAgent(AgentInterface):
 
         # Add the new user message to the "human" messages
         past_messages.append(("human", user_message))
-
-        # Save user message to memory (so it's available for the next turn)
         self.memory.save_user_message(session_id, user_message)
 
         # Invoke the chain
         response = self.agent.invoke({"messages": past_messages})
-
-        # Extract final text from the agent response
         final_text = response["messages"][-1].content
 
         # Save agent response into memory
