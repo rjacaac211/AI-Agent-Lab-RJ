@@ -76,39 +76,40 @@ Below is an overview of the files that implement the agent’s functionality and
 - **Class**: `MainAgent`
 - **Implements**: `AgentInterface`
 - **Highlights**:
-  1. **LangChain/LangGraph** Integration: Constructs a “ReAct” agent with the specified large language model (LLM) and tools.
-  2. **System Prompt**: Injects a short description of the database schema so the agent can generate accurate SQL queries.
-  3. **Method**: `invoke(user_message: str) -> str`
-     - Receives the user query.
-     - Feeds it to the underlying LLM-based agent.
-     - Returns the final response text.
+  - **LangChain/LangGraph** Integration: Constructs a “ReAct” agent with the specified large language model (LLM) and tools.
+  - **System Prompt**: Injects a short description of the database schema so the agent can generate accurate SQL queries.
+  - **Method**: `invoke(user_message: str) -> str`
+    - Receives the user query.
+    - Feeds it to the underlying LLM-based agent.
+    - Returns the final response text.
 
 ### **4.3. `app/core/tool.py`**
-- **Class**: `QueryQuestDBTool`
-- **Inherits**: `BaseTool` (from LangChain) & `ToolInterface` (custom).
-- **Highlights**:
-  1. **QuestDB Connection**: Executes SQL queries using a lightweight PostgreSQL driver (`psycopg2`).
-  2. **Method**: `execute_query(query: str) -> str`
-     - Called by the agent when a SQL query needs to run.
-     - Returns query results in a JSON-like string.
+- **Classes:**
+  - **`QueryQuestDBTool`**: Executes SQL queries against QuestDB.
+  - **`GrafanaDashboardTool`**: Manages Grafana dashboards via its HTTP API.
+  - **`VSCodeIntegrationTool`**: Communicates with a VS Code extension via a WebSocket interface to create or delete files.
+- **Highlights:**
+  - **QueryQuestDBTool:** Uses `psycopg2` to connect to QuestDB.
+  - **GrafanaDashboardTool:** Handles creating, deleting, and searching dashboards.
+  - **VSCodeIntegrationTool:** Uses Python’s `websocket-client` library to send JSON commands over WebSocket to the VS Code extension.
 
 ### **4.4. `app/core/memory.py`**
 - **Class**: `WindowMemoryManager`
 - **Implements**: `MemoryInterface`
 - **Highlights**:
-  1. Provides memory management for conversation context.
-  2. Uses a window-based approach to retain only the most recent messages (e.g., 10 messages) for context.
-  3. Enables multi-turn conversational capability.
+  - Provides memory management for conversation context.
+  - Uses a window-based approach to retain only the most recent messages (e.g., 10 messages) for context.
+  - Enables multi-turn conversational capability.
 
-### **4.4. `app/interface/` (Interfaces)
+### **4.5. `app/interface/` (Interfaces)
 - **`agent_interface.py`**: Defines `AgentInterface` with the core method signature `invoke(user_message: str) -> str`.
-- **`tool_interface.py`**: Defines `ToolInterface` with the core method signature `execute_query(query: str) -> str`.
+- **`tool_interface.py`**: Defines `ToolInterface` with the core method signature `execute_tool(query: str) -> str`.
 - **`memory_interface.py`**: Defines `MemoryInterface` with the necessary methods to manage conversation memory.
 - **`__init__.py`**: Makes these interfaces easily importable from a single place.
 
 This directory is pivotal in the **Interface-First** approach. By referencing the interfaces rather than concrete classes, the rest of the code remains flexible and unit-testable.
 
-### **4.5. `app/routes/chat_routes.py`**
+### **4.6. `app/routes/chat_routes.py`**
 - **Blueprint**: `chat_bp`
 - **Endpoint**: `POST /chat`
 - **Flow**:
@@ -116,7 +117,7 @@ This directory is pivotal in the **Interface-First** approach. By referencing th
   2. Passes that message to `MainAgent().invoke(user_message)`.
   3. Returns the AI agent’s response in JSON form.
 
-This route demonstrates how the system ties together: a user message flows from the Flask endpoint → `MainAgent` → `QueryQuestDBTool` → returns final output as text.
+This route demonstrates how the system ties together: a user message flows from the Flask endpoint → `MainAgent` → `Tool` → returns final output as text.
 
 ### **4.6. `app/routes/health_routes.py`**
 - **Blueprint**: `health_bp`
@@ -127,10 +128,37 @@ This route demonstrates how the system ties together: a user message flows from 
 
 ---
 
+## 5. VSCode Integration
+
+The AI agent integrates with a VS Code extension that exposes a WebSocket interface for file management.
+
+### Key Points:
+- **WebSocket Endpoint:** The extension listens on the URL defined by `VSCODE_WS_URL` (e.g., `ws://vscode:8765`).
+- **Command Format:**  
+  When issuing VS Code file management commands, output a valid JSON object with the following keys:
+  - **operation:** "create" or "delete"
+  - **filepath:** Absolute file path (e.g., `/home/coder/new_file.txt`)
+  - **content:** (Only for "create") the content to write in the file
+
+### Example Commands:
+- **Create a File:**
+
+'''
+{ "operation": "create", "filepath": "/home/coder/new_file.txt", "content": "Hello, there. How are you? Hope you're doing well." }
+'''
+
+- **Delete a File:**
+
+'''
+{ "operation": "delete", "filepath": "/home/coder/new_file.txt" }
+'''
+
+The AI agent uses the `VSCodeIntegrationTool` to send these JSON commands over WebSocket to the VS Code extension, which then performs the file operations.
+
+---
+
 ## **Conclusion**
 
-This simple prototype illustrates how an **Interface-First** design results in a modular, testable AI agent capable of generating text-to-SQL queries for QuestDB. It is intentionally minimal, focusing on the fundamental flow:
-
-**User Query → AI Agent → SQL Generation → QuestDB Execution → Response to User**.
+This simple prototype demonstrates an **Interface-First Design** that results in a modular, testable AI agent. It integrates natural language processing, SQL query generation, database querying (QuestDB), dashboard management (Grafana), and file management through a custom VS Code extension.
 
 With this foundation in place, additional features and integrations can be layered on as the project evolves, maintaining clear separations of concern thanks to the use of well-defined interfaces.
