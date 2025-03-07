@@ -169,3 +169,35 @@ class GrafanaDashboardTool(BaseTool, ToolInterface):
 
     def execute_tool(self, query: str) -> str:
         return self._run(query)
+
+
+class VSCodeIntegrationTool(BaseTool, ToolInterface):
+    """
+    A tool for integrating the AI Agent with VSCode via a WebSocket interface.
+    Supported Commands:
+      - "create:<filepath>:<content>" to create a file.
+      - "delete:<filepath>" to delete a file.
+    """
+
+    name: str = "VSCodeIntegrationTool"
+    description: str = "Integrates with VSCode via WebSocket to manage files."
+
+    def _run(self, tool_input: str) -> str:
+        ws_url = Config.VSCODE_WS_URL
+        try:
+            # If tool_input is not a string, convert it to JSON.
+            if not isinstance(tool_input, str):
+                tool_input = json.dumps(tool_input)
+            ws = websocket.create_connection(ws_url, timeout=10)
+            ws.send(tool_input)
+            response = ws.recv()
+            ws.close()
+            return response
+        except Exception as e:
+            return f"VSCode WebSocket error: {str(e)}"
+    
+    async def _arun(self, tool_input: str) -> str:
+        raise NotImplementedError("Async not implemented for VSCodeIntegrationTool.")
+
+    def execute_tool(self, query: str) -> str:
+        return self._run(query)

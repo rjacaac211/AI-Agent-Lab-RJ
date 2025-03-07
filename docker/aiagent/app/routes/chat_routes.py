@@ -1,12 +1,12 @@
 from flask import Blueprint, request, jsonify
 from aiagent.app.core.agent import MainAgent
-from aiagent.app.core.tool import QueryQuestDBTool, GrafanaDashboardTool
+from aiagent.app.core.tool import QueryQuestDBTool, GrafanaDashboardTool, VSCodeIntegrationTool
 
 # Initialize Blueprint
 chat_bp = Blueprint("chat_bp", __name__)
 
 # Create an instance of your new agent
-tools = [QueryQuestDBTool(), GrafanaDashboardTool()]
+tools = [QueryQuestDBTool(), GrafanaDashboardTool(), VSCodeIntegrationTool()]
 agent = MainAgent(tools=tools)
 
 @chat_bp.route('', methods=['POST'])

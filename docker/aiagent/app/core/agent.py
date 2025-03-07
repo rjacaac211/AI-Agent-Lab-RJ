@@ -38,7 +38,8 @@ class MainAgent(AgentInterface):
             openai_api_key=openai_api_key,
             model=model_name)
 
-        # Create a custom system prompt or template
+        # Create a custom system prompt
+
         # Database schema details
         table_schema = """
         The database schema is as follows:
@@ -62,12 +63,19 @@ class MainAgent(AgentInterface):
         You have two tools at your disposal:
         - QueryQuestDBTool: Execute SQL queries against QuestDB.
         - GrafanaDashboardTool: Manage Grafana dashboards.
+        - VSCodeIntegrationTool: Create or delete files in VSCode.
 
-        When handling Grafana dashboard tasks, output exactly one of the following commands (and nothing else):
+        When handling tasks:
+        - For Grafana dashboard tasks, output exactly one of the following commands (and nothing else):
           - To create a new dashboard: "create:<title>"
           - To delete a dashboard by UID: "delete:<uid>"
           - To delete a dashboard by name: "deleteByName:<dashboard_name>"
-
+        - For VSCode file management tasks, output exactly one of the following commands:
+          - "create:<filepath>:<content>" to create a new file with the specified content. 
+          - "delete:<filepath>" to delete the specified file.
+          - Note: All file paths should be absolute and start with "/home/coder/". If you are given a relative path, assume "/home/coder/" as the base directory.
+          - When issuing VSCode file management commands, please output a valid JSON object with keys 'operation', 'filepath', and 'content' (if applicable). For example: (open curly bracket) "operation": "create", "filepath": "/home/coder/new_file_text.txt", "content": "Hello, there." (close curly bracket).
+          
         Make final replies brief and concise while maintaining understandability, clarity and completeness.
         Do NOT add extra explanations or texts.
         """

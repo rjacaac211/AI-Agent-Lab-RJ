@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod
 
 class ToolInterface(ABC):
-    """Abstract interface for a general-purpose tool (e.g., QuestDB, Grafana, etc.)."""
+    """Abstract interface for a general-purpose tool (QuestDB, Grafana, VSCode, etc.)."""
 
     @abstractmethod
-    def execute_query(self, query: str) -> str:
+    def execute_tool(self, query: str) -> str:
         """
-        Executes a query or command and returns a string result.
+        Executes a tool and returns a string result.
         """
         pass
