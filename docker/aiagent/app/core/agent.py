@@ -82,9 +82,9 @@ class MainAgent(AgentInterface):
 
         # Create the ReAct agent
         self.agent = create_react_agent(
-            self.llm,
-            self.tools,
-            state_modifier=system_prompt
+            model=self.llm,
+            tools=self.tools,
+            prompt=system_prompt
         )
 
     @traceable

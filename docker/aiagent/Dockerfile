@@ -1,5 +1,4 @@
-# syntax=docker/dockerfile:1.4
-FROM python:3.10-alpine
+FROM python:3.13.2-slim
 
 # Set environment variables to avoid Python bytecode caching
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -12,7 +11,9 @@ ENV PYTHONPATH=/
 WORKDIR /aiagent
 
 # Install system dependencies (e.g., PostgreSQL client for QuestDB)
-RUN apk add --no-cache gcc g++ musl-dev libpq-dev postgresql-client
+RUN apt-get update && apt-get install -y \
+    gcc g++ libpq-dev postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements file and install dependencies
 COPY requirements.txt /aiagent
